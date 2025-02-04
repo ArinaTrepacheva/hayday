@@ -247,6 +247,9 @@ MYEVENTTYPE = pygame.USEREVENT + 1
 pygame.time.set_timer(MYEVENTTYPE, 200)
 
 # Отображение стартового окна
+pygame.mixer.init()
+pygame.mixer.music.load('music.mp3')
+pygame.mixer.music.play(-1)
 bg.image = load_image("стартокно.png", (0, 0, 0))
 bg.rect = (0, 0, 600, 600)
 
